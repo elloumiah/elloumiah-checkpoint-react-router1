@@ -1,6 +1,9 @@
  .App {
   background-color: rgb(136, 16, 16);
 }
+.movielink{
+  text-align: center;
+}
 
 /* .App-logo {
   height: 40vmin;
