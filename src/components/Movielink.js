@@ -24,9 +24,11 @@ function Movielink({ match, movies }) {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       ></iframe>
-      <Link to="/">
+      <div className="rating">
+      <Link to="/" >
         <Button variant="info">Go Back</Button>
       </Link>
+      </div>
     </div>
   );
 }

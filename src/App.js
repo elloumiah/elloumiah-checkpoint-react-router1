@@ -36,6 +36,7 @@ const moviesL = [
     rate: "3",
     url:"https://www.youtube.com/embed/ybji16u608U"
     
+    
   },
 ];
 
@@ -50,13 +51,13 @@ function App() {
         path="/"
         exact
         render={() => (
-          <div>
+          <div className="rating">
             <Rating
               testRating={true}
               rate={rate}
               filterByRate={(rate) => setRate(rate)}
             />
-            <Movielist movies={movies} setMovies={setMovies} />
+            <Movielist movies={movies} setMovies={setMovies} rate={rate} />
           </div>
         )}
       ></Route>
